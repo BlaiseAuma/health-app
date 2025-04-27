@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Item Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNameTextView"
+        android:layout_marginTop="10dp"
+        android:text="kes 0"
+        android:textColor="#DA2C2C"
+        android:textSize="24sp"
+        android:layout_toEndOf="@id/itemNameTextView"
+        android:layout_toRightOf="@id/itemNameTextView" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemPriceTextView"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/itemNameTextView"
+        android:layout_toRightOf="@id/itemNameTextView"
+        android:text="Total: kes 0"
+        android:textColor="#717980"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/increaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginTop="10dp"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/increaseButton"
+        android:layout_toRightOf="@id/increaseButton"
+        android:background="#00F3F1F1"
+        android:padding="10dp"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/decreaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/quantityTextView"
+        android:layout_toRightOf="@id/quantityTextView"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalPriceTextView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/decreaseButton"
+        android:text="Remove" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/increaseButton"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

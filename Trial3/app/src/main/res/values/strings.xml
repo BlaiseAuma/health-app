@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Clinic App</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="who_we_are">WHO WE ARE</string>
+    <string name="name">Name</string>
+    <string name="message">Message</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="done">Done</string>
+    <string name="check">Check</string>
+    <string name="paragraph">CEMA (Centre for Epidemiological Modelling and Analysis) is a research center at the University of Nairobi focused on using data and mathematical models to understand and predict disease spread. It supports evidence-based decision-making in public health, particularly for infectious diseases in Kenya and across Africa.
+
+
+</string>
+    <string-array name="age_array">
+        <item>Infant</item>
+        <item>Child</item>
+        <item>Teen</item>
+        <item>Adult</item>
+        <item>Youth</item>
+        <item>Elderly</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="specification_array">
+        <item>Pregnant</item>
+        <item>Allergic</item>
+        <item>Disabled</item>
+    </string-array>
+
+</resources>

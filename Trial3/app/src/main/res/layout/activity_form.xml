@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <TextView
+        android:id="@+id/roomTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Form"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/amountPaidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/roomSelectedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountPaidTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomSelectedTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Download Form"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloadButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Back" />
+</RelativeLayout>

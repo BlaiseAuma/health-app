@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/universityTextView"
+        android:layout_marginBottom="28dp"
+        android:text="Date: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/universityTextView"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_marginBottom="-9dp"
+        android:text="Name of Doctor: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/receiptTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignStart="@+id/scrollView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="133dp"
+        android:text="----- Receipt -----"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="413dp"
+        android:layout_height="207dp"
+        android:layout_above="@+id/totalPriceTextView"
+        android:layout_marginBottom="-33dp">
+
+        <LinearLayout
+            android:id="@+id/itemListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="259dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="247dp"
+        android:text="Total Price: kes 0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

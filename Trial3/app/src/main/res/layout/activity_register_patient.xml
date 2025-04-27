@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPatient">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register a Patient"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Patient Name"
+        android:layout_below="@id/titleTextView"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Patient Email"
+        android:layout_below="@id/nameEditText"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Phone -->
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Patient Phone Number"
+        android:inputType="phone"
+        android:layout_below="@id/emailEditText"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Age Spinner -->
+    <Spinner
+        android:id="@+id/ageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneEditText"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <!-- Gender Spinner -->
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageSpinner"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <!-- Specification Spinner -->
+    <Spinner
+        android:id="@+id/specificationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSpinner"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/secureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/specificationSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>

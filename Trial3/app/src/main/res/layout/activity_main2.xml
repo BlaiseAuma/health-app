@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <!-- Program Title -->
+        <TextView
+            android:id="@+id/hivAidsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3B8B8"
+            android:padding="16dp"
+            android:text="HIV/AIDS Program"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001" />
+
+        <!-- HIV/AIDS Description Text -->
+        <TextView
+            android:id="@+id/hivDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="HIV (Human Immunodeficiency Virus) is a virus that attacks the immune system. If left untreated, HIV can lead to AIDS (Acquired Immunodeficiency Syndrome), a condition where the immune system is severely weakened, making it difficult for the body to fight off infections and diseases. It is important to get tested, know your status, and receive appropriate care to manage the virus."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hivAidsButton"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Enroll Button -->
+        <Button
+            android:id="@+id/enrollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enroll"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hivDescription" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

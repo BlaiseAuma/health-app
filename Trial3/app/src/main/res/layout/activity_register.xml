@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctors' Field of Expertise "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp">
+
+            <!-- Sample layout for each room -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <!-- ImageView for room image -->
+                <ImageView
+                    android:id="@+id/roomImageView1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dise"
+                    android:scaleType="fitXY"/>
+
+                <!-- TextView for room number -->
+                <TextView
+                    android:id="@+id/roomNumberTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D.Specialist"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"/>
+
+                <!-- Button to select room -->
+                <Button
+                    android:id="@+id/selectRoomButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:layout_marginStart="16dp"/>
+
+
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+            <!-- Add more LinearLayouts for additional rooms as needed -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Sample layout for each room -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <!-- ImageView for room image -->
+                <ImageView
+                    android:id="@+id/roomImageView2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/epide"
+                    android:scaleType="fitXY"/>
+
+                <!-- TextView for room number -->
+                <TextView
+                    android:id="@+id/roomNumberTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Epidemiologist"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"/>
+
+                <!-- Button to select room -->
+                <Button
+                    android:id="@+id/selectRoomButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Sample layout for each room -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <!-- ImageView for room image -->
+                <ImageView
+                    android:id="@+id/roomImageView3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/enro"
+                    android:scaleType="fitXY"/>
+
+                <!-- TextView for room number -->
+                <TextView
+                    android:id="@+id/roomNumberTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C. Resercher"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"/>
+
+                <!-- Button to select room -->
+                <Button
+                    android:id="@+id/selectRoomButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Sample layout for each room -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for room image -->
+                    <ImageView
+                        android:id="@+id/roomImageView4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/conse"
+                        android:scaleType="fitXY"/>
+
+                    <!-- TextView for room number -->
+                    <TextView
+                        android:id="@+id/roomNumberTextView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Counselor"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"/>
+
+                    <!-- Button to select room -->
+                    <Button
+                        android:id="@+id/selectRoomButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select"
+                        android:layout_marginStart="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Sample layout for each room -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for room image -->
+                    <ImageView
+                        android:id="@+id/roomImageView5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/vet"
+                        android:scaleType="fitXY"/>
+
+                    <!-- TextView for room number -->
+                    <TextView
+                        android:id="@+id/roomNumberTextView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vetenerian"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"/>
+
+                    <!-- Button to select room -->
+                    <Button
+                        android:id="@+id/selectRoomButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select"
+                        android:layout_marginStart="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Sample layout for each room -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+                    <!-- ImageView for room image -->
+                    <ImageView
+                        android:id="@+id/roomImageView6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ph"
+                        android:scaleType="fitXY"/>
+
+                    <!-- TextView for room number -->
+                    <TextView
+                        android:id="@+id/roomNumberTextView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PH.Physician"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"/>
+
+                    <!-- Button to select room -->
+                    <Button
+                        android:id="@+id/selectRoomButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select"
+                        android:layout_marginStart="16dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

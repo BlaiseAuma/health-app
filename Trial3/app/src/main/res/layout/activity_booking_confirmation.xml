@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingConfirmationActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Confirmation"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/roomDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Details:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/roomDetailsContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomDetailsTextView"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Registration"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/roomDetailsContentTextView"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
